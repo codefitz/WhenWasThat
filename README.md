@@ -22,9 +22,10 @@ Python module for returning a human readable value for the time between two spec
 
 ```python
 >>> import import datetime as dt
+>>> from WhenWasThat import when
 >>> first_date = dt.datetime(2006, 10, 27, 11, 59, 32, 343001)
 >>> last_date = dt.datetime(2016, 9, 30, 20, 21, 43, 561783)
->>> whenWasThat(first_date,last_date).days
+>>> when(first_date,last_date).days
 3626.348740958125
 ```
 
@@ -33,7 +34,7 @@ Python module for returning a human readable value for the time between two spec
 ```python
 >>> first_date = dt.datetime(2006, 10, 27, 11, 59, 32, 343001)
 >>> last_date = dt.datetime(2016, 9, 30, 20, 21, 43, 561783)
->>> whenWasThat(first_date,last_date).natural
+>>> when(first_date,last_date).natural
 Approximately 9.9 years ago
 ```
 
@@ -41,9 +42,9 @@ Approximately 9.9 years ago
 
 ```python
 >>> time_then = dt.datetime(2020, 3, 23, 0, 1, 1, 1)
->>> whenWasThat(time_then).weeks
+>>> when(time_then).weeks
 75.20358385298611
->>> whenWasThat(time_then).natural
+>>> when(time_then).natural
 Approximately 17.5 months ago
 ```
 
@@ -53,12 +54,13 @@ Approximately 17.5 months ago
 >>> dt.datetime.now()
 datetime.datetime(2021, 8, 31, 10, 20, 59, 979468)
 >>> titanic = dt.datetime(1912, 4, 15, 2, 20, 0, 0)
->>> print("The Titanic sunk %s days ago." % round(whenWasThat(titanic).days))
+>>> print("The Titanic sunk %s days ago." % round(when(titanic).days))
 The Titanic sunk 39950 days ago.
 ```
 
 ## Releases
 
-| Version | Summary                                                | Known Issues          | Fixed                          |
-| :-----: | ------------------------------------------------------ | --------------------- | ------------------------------ |
-| Alpha-0.0.1 | Alpha release.                                     |                       |                                |
+| Version     | Summary                                                | Known Issues          | Fixed                          |
+| :---------: | ------------------------------------------------------ | --------------------- | ------------------------------ |
+| Alpha-0.0.1 | Alpha release.                                         |                       |                                |
+| 0.1.0       | Released to PyPi                                       |                       |                                |
