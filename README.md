@@ -21,7 +21,7 @@ Python module for returning a human readable value for the time between two spec
 ### Retrieve number of days between two dates
 
 ```python
->>> import import datetime as dt
+>>> import datetime as dt
 >>> from WhenWasThat import when
 >>> first_date = dt.datetime(2006, 10, 27, 11, 59, 32, 343001)
 >>> last_date = dt.datetime(2016, 9, 30, 20, 21, 43, 561783)
