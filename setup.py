@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="WhenWasThat",
-    version="0.1.0",
+    version="0.1.1",
     author="Wes Moskal-Fitzpatrick",
     author_email="wes@traversys.io",
     description="A small library for getting human readable time value.",

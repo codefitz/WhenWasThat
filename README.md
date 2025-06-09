@@ -64,5 +64,5 @@ The Titanic sunk 39950 days ago.
 | :---------: | ------------------------------------------------------ | --------------------- | ------------------------------ |
 | Alpha-0.0.1 | Alpha release.                                         |                       |                                |
 | 0.1.0       | Released to PyPi                                       |                       |                                |
-| 0.1.1       | Added pytest-based test suite and bug fixes            |
+| 0.1.1       | Released to PyPI with pytest-based test suite and bug fixes |
               |                                |
