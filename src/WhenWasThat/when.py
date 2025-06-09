@@ -4,7 +4,9 @@ import pandas as pd
 class whenWasThat:
     '''When was that?'''
 
-    def __init__(self, time_then, time_now = dt.datetime.now()):
+    def __init__(self, time_then, time_now=None):
+        if time_now is None:
+            time_now = dt.datetime.now()
         self.time_then = time_then
         self.time_now = time_now
         self.new_delta = abs(time_now - time_then)
