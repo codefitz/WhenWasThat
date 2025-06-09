@@ -84,7 +84,7 @@ class whenWasThat:
         # 0, 1 min, 2 hours, 2 days, 2 weeks, 2 months, 2 years
         bins = [0,1,120,2880,20160,87660,1051920,float("inf")]
         secs = "%s seconds ago" % self.new_delta.seconds # 0-2
-        mins = "Approximately %s minutes ago" % round(self.s_mins) # overall_mins # 2-59
+        mins = "Approximately %s minutes ago" % round(self.s_mins) # 2–59 mins via self.s_mins
         hours = "Approximately %s hours ago" % round(self.s_hours) # 59-1440
         days = "Approximately %s days ago" % self.d_days # 1440-10080
         weeks = "Approximately %s weeks ago" % round(self.d_weeks,1) # 10080-43830
